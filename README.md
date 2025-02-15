@@ -51,6 +51,8 @@ STAR_COUNT:配置provider展示的星星的数量
 STAR_COLOR: 配置provider展示的星星的颜色 red（红色）、blue（蓝色）、green（绿色）、yellow（黄色）、gold（金色）、silver（银色）、orange（橙色）、purple（紫色）、pink（粉色）、black（黑色）、white（白色）
 示例：STAR_COLOR=blue
 ```
+consumer需要通过修改环境变量调用provider提供的服务。
+provider需要通过修改环境变量显示星星的颜色和数量
 
 
 ### 容器镜像
