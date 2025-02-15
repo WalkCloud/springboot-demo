@@ -58,7 +58,7 @@ provider需要通过修改环境变量显示星星的颜色和数量
 ### 容器镜像
 ```
 consumer镜像地址：registry.cn-beijing.aliyuncs.com/walkcloud/consumer:0.0.1-sm
-providera镜像地址：registry-vpc.cn-beijing.aliyuncs.com/walkcloud/providera:0.0.1-sm
-providerb镜像地址：registry-vpc.cn-beijing.aliyuncs.com/walkcloud/providerb:0.0.1-sm
+providera镜像地址：registry.cn-beijing.aliyuncs.com/walkcloud/providera:0.0.1-sm
+providerb镜像地址：registry.cn-beijing.aliyuncs.com/walkcloud/providerb:0.0.1-sm
 
 ```
