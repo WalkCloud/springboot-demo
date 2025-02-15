@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to visit the microservice demo application!</title>
+    <style>
+        .service-card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .star {
+            font-size: 24px;
+            margin-right: 3px;
+        }
+        h1 { color: #2c3e50; }
+        .env-info {
+            margin: 15px 0;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #2c3e50;
+        }
+    </style>
+</head>
+<body>
+<h1>Welcome to visit the microservice demo application!</h1>
+
+<div class="env-info">
+    <p>Operating environment: OpenJDK 17</p>
+    <p>Spring Boot environment: 3.0.2</p>
+    <p>Microservice architecture: Service mesh</p>
+</div>
+
+<p>The currently accessed microservice is: consumer</p>
+
+<div class="service-card" th:object="${providerA}">
+    <h3>Service Provider A</h3>
+    <p>Service Name: <span th:text="*{serviceName}"></span></p>
+    <p>Host Name: <span th:text="*{hostName}"></span></p>
+    <p>IP Address: <span th:text="*{ipAddress}"></span></p>
+    <p>Star Rating:
+        <span th:each="color : *{stars}"
+              class="star"
+              th:style="'color: ' + ${color}">★</span>
+    </p>
+</div>
+
+<div class="service-card" th:object="${providerB}">
+    <h3>Service Provider B</h3>
+    <p>Service Name: <span th:text="*{serviceName}"></span></p>
+    <p>Host Name: <span th:text="*{hostName}"></span></p>
+    <p>IP Address: <span th:text="*{ipAddress}"></span></p>
+    <p>Star Rating:
+        <span th:each="color : *{stars}"
+              class="star"
+              th:style="'color: ' + ${color}">★</span>
+    </p>
+</div>
+</body>
+</html>

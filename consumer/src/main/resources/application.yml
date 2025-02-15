@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: consumer
+
+# 使用环境变量配置服务名，默认值为 providera 和 providerb
+provider:
+  a:
+    service_name: ${PROVIDERA_SERVICE_NAME:providera}
+  b:
+    service_name: ${PROVIDERB_SERVICE_NAME:providerb}

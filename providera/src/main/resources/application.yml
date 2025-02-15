@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: providera
+
+# 使用环境变量配置星星数量和颜色的默认值
+star:
+  count: ${STAR_COUNT:3}
+  color: ${STAR_COLOR:red}
