@@ -46,7 +46,7 @@ PROVIDERB_SERVICE_NAME: 配置调用providerb的Kubernetes cluster ip或者servi
 示例：PROVIDERB_SERVICE_NAME=providerb
 
 STAR_COUNT:配置provider展示的星星的数量  
-示例：STAR_COUN=5  
+示例：STAR_COUNT=5  
 
 STAR_COLOR: 配置provider展示的星星的颜色 red（红色）、blue（蓝色）、green（绿色）、yellow（黄色）、gold（金色）、silver（银色）、orange（橙色）、purple（紫色）、pink（粉色）、black（黑色）、white（白色）
 示例：STAR_COLOR=blue
